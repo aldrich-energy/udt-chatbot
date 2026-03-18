@@ -82,7 +82,7 @@
     register: {
       text: "Registering is easy! We have Visitor Passes, Delegate Packages, and VIP options available.\n\nClick below to secure your spot:",
       link: "Register Now →",
-      url: "https://UDT Event-expo.com/register"
+      url: "https://www.udt-event.com/registrations"
     },
     sponsor: "🤝 Sponsorship Packages:\n\n💎 Diamond – USD 75,000\n🥇 Platinum – USD 55,000\n🥈 Gold – USD 40,000\n🥉 Silver – USD 25,000\n\nEach package includes exhibition space, branding & delegate passes.\n📧 Contact: sponsor@UDT Event-expo.com"
   };
