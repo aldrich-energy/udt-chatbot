@@ -104,7 +104,7 @@
     showTyping();
     setTimeout(() => {
       removeTyping();
-      addBot("👋 Hello! Welcome to UDT 2026!\n\nTo get started, please share your email address. We'll keep you updated about our upcoming event in Kuwait! 📩");
+      addBot("👋 Hello! Welcome to UDT 2026!\n\nTo get started, please share your email address. We'll keep you updated about our upcoming event in Abu dhabi! 📩");
       setTimeout(showEmailCard, 350);
     }, 900);
   }
@@ -187,7 +187,7 @@
     showTyping();
     setTimeout(() => {
       removeTyping();
-      addBot("🎉 Thank you! Your email has been saved.\n\nWe'll keep you updated on UDT 2026 in Kuwait. How can I help you today?", MAIN_QRS);
+      addBot("🎉 Thank you! Your email has been saved.\n\nWe'll keep you updated on UDT 2026 in Abu dhabi. How can I help you today?", MAIN_QRS);
     }, 800);
   }
 
