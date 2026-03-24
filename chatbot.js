@@ -74,7 +74,7 @@
       <input type="text" id="_cb_input" placeholder="Enter your email above first..." disabled />
       <button id="_cb_sendbtn"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24"><path fill="#fff" d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg></button>
     </div>
-    <div class="_cb_powered">UDT 2026 · Smart Assistant</div>
+    <div class="_cb_powered">UDT 2026· Smart Assistant</div>
   `;
   document.body.appendChild(win);
 
@@ -89,7 +89,7 @@
     sponsor: "🤝 Sponsorship Packages:\n\n💎 Diamond – USD 75,000\n🥇 Platinum – USD 55,000\n🥈 Gold – USD 40,000\n🥉 Silver – USD 25,000\n\nEach package includes exhibition space, branding & delegate passes.\n📧 Contact: sponsor@UDT Event-expo.com"
   };
 
-  const MAIN_QRS = ["What is UDT 2026?", "Event Date & Venue", "How to Register?", "Sponsorship Details"];
+  const MAIN_QRS = ["What is UDT 2026 ?", "Event Date & Venue", "How to Register?", "Sponsorship Details"];
   let chatOpen = false, greeted = false, emailCollected = false;
 
   launcher.addEventListener('click', () => {
@@ -104,7 +104,7 @@
     showTyping();
     setTimeout(() => {
       removeTyping();
-      addBot("👋 Hello! Welcome to UDT 2026!\n\nTo get started, please share your email address. We'll keep you updated about our upcoming event in Abu dhabi! 📩");
+      addBot("👋 Hello! Welcome to UDT 2026!\n\nTo get started, please share your email address. We'll keep you updated about our upcoming event in Kuwait! 📩");
       setTimeout(showEmailCard, 350);
     }, 900);
   }
@@ -187,7 +187,7 @@
     showTyping();
     setTimeout(() => {
       removeTyping();
-      addBot("🎉 Thank you! Your email has been saved.\n\nWe'll keep you updated on UDT 2026 in Abu dhabi. How can I help you today?", MAIN_QRS);
+      addBot("🎉 Thank you! Your email has been saved.\n\nWe'll keep you updated on UDT 2026 in Abu Dhabi. How can I help you today?", MAIN_QRS);
     }, 800);
   }
 
@@ -247,22 +247,22 @@
     addUser(text); showTyping();
     setTimeout(() => {
       removeTyping();
-      if (t.match(/^(hi|hello|hey|greetings)/)) {
+      if (t.match(/^(hi|hello|hey)/)) {
         addBot("👋 Hello again! How can I help you today?", MAIN_QRS);
-      } else if (t.includes('what is') || t.includes('about') || t.includes('UDT Event')) {
+      } else if (t.includes('what is') || t.includes('about') || t.includes('aimcs')) {
         addBot(FAQ.about, MAIN_QRS);
-      } else if (t.includes('date') || t.includes('when') || t.includes('where') || t.includes('venue') || t.includes('location') || t.includes('event')) {
+      } else if (t.includes('date') || t.includes('when') || t.includes('where') || t.includes('venue') || t.includes('location') || t.includes('event date')) {
         addBot(FAQ.when, MAIN_QRS);
       } else if (t.includes('register') || t.includes('ticket') || t.includes('pass') || t.includes('attend') || t.includes('how to')) {
         addBot(FAQ.register.text, MAIN_QRS, { link: FAQ.register.link, url: FAQ.register.url });
-      } else if (t.includes('sponsor') || t.includes('package') || t.includes('partner') || t.includes('diamond') || t.includes('platinum') || t.includes('gold') || t.includes('silver')) {
+      } else if (t.includes('sponsor') || t.includes('package') || t.includes('partner') || t.includes('exhibit')) {
         addBot(FAQ.sponsor, MAIN_QRS);
       } else if (t.includes('thank')) {
-        addBot("You're welcome! 😊 See you at UDT Event EXPO 2026 in Abu dhabi!", MAIN_QRS);
+        addBot("You're welcome! 😊 See you at UDT 2026 in Abu Dhabi!", MAIN_QRS);
       } else if (t.includes('bye') || t.includes('goodbye')) {
-        addBot("Goodbye! 👋 See you at UDT Event EXPO 2026 in Abu dhabi. Feel free to come back anytime!", []);
+        addBot("Goodbye! 👋 See you at UDT 2026 . Come back anytime!", []);
       } else {
-        addBot("I'm here to help with UDT Event EXPO 2026. Please choose a topic below:", MAIN_QRS);
+        addBot("I'm here to help with questions about UDT 2026 . Please choose a topic:", MAIN_QRS);
       }
     }, 700);
   }
