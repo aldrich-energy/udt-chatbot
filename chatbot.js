@@ -86,7 +86,7 @@
       link: "Register Now →",
       url: "https://www.udt-event.com/registrations"
     },
-    sponsor: "🤝 Sponsorship Packages:\n\n💎 Diamond – USD 75,000\n🥇 Platinum – USD 55,000\n🥈 Gold – USD 40,000\n🥉 Silver – USD 25,000\n\nEach package includes exhibition space, branding & delegate passes.\n📧 Contact: sponsor@UDT Event-expo.com"
+    sponsor: "🤝 Sponsorship Packages:\n\n💎 Diamond – USD 75,000\n🥇 Platinum – USD 55,000\n🥈 Gold – USD 40,000\n🥉 Silver – USD 25,000\n\nEach package includes exhibition space, branding & delegate passes.\n📧 Contact: register@udt-event.com"
   };
 
   const MAIN_QRS = ["What is UDT 2026 ?", "Event Date & Venue", "How to Register?", "Sponsorship Details"];
