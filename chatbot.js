@@ -1,7 +1,8 @@
 (function () {
-  const SHEET_URL = "https://script.google.com/macros/s/AKfycbxVy1qtiyteTOXr7q0vBNLvvbcxoHOnZncouWCD2AhEG6ns4qcElkwokJdNmb0e3ltt8Q/exec";
+  const SHEET_URL = "https://script.google.com/macros/s/AKfycbwLgLdTakPKptg3vqwIQSii__l7Q31VOwBLWQGUdWVtCVsKrZMSLR8b0tBaKVbVh3uNiQ/exec";
   const MAILBITE_KEY = "9OS7K5lAbUO7H5BYrIJuXmlSQOScekK68C91";
-  const WEBSITE_NAME = "UDT Event"; // ← change this per website
+  const NOTIFICATION_API = "https://aldrich-energy-htx9.vercel.app/api/udt-email-notification"; 
+  const WEBSITE_NAME = "UDT Event"; 
 
   const css = `
     #_cb_launcher{position:fixed;bottom:28px;right:28px;width:56px;height:56px;border-radius:50%;background:#AA3B4B;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.2);z-index:99999;transition:transform .2s;}
@@ -172,7 +173,20 @@
         email: email,
         timestamp: new Date().toISOString(),
         website: WEBSITE_NAME,
+        source: "Chatbot"
       })
+    }).catch(() => {});
+
+    // Step 2.5: Email Notification
+    fetch(NOTIFICATION_API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email: email,
+        website: WEBSITE_NAME,
+        source: "Chatbot",
+        timestamp: new Date().toISOString(),
+      }),
     }).catch(() => {});
 
     // Step 3: Continue chat
