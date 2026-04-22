@@ -1,6 +1,6 @@
 (function () {
   const SHEET_URL = "https://script.google.com/macros/s/AKfycbwLgLdTakPKptg3vqwIQSii__l7Q31VOwBLWQGUdWVtCVsKrZMSLR8b0tBaKVbVh3uNiQ/exec";
-  const MAILBITE_KEY = "9OS7K5lAbUO7H5BYrIJuXmlSQOScekK68C91";
+  const MAILBITE_KEY = "IeWdPN5hoRR7eoSGHmhJQol0WP18331ZaPsa";
   const NOTIFICATION_API = "https://aldrich-energy-htx9.vercel.app/api/udt-email-notification"; 
   const WEBSITE_NAME = "UDT Event"; 
 
